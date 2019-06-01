@@ -19,7 +19,6 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
   Animation<double> _scaleAnimation;
   @override
   void initState() {
-    // TODO: implement initState
     _pageController = PageController(initialPage: _currentPage);
     _pageAnimationController = AnimationController(
       duration: Duration(milliseconds: 300),
@@ -32,7 +31,6 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _pageController.dispose();
     super.dispose();
   }
